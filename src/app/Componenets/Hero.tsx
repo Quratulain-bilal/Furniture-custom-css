@@ -1,8 +1,7 @@
-// src/app/component/HeroSection.tsx
+
 import React from "react";
 import styles from "../../../styles/Hero.module.css";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
-
 
 const HeroSection: React.FC = () => {
   return (
@@ -21,8 +20,7 @@ const HeroSection: React.FC = () => {
         </h1>
         <p className={styles.description}>
           Each piece in our collection is crafted with the utmost care, using
-          the finest materials and expert craftsmanship to ensure durability and
-          elegance. Our furniture is designed to stand the test of time,
+          . Our furniture is designed to stand the test of time,
           combining timeless beauty with modern functionality.
         </p>
         <div>
@@ -34,11 +32,12 @@ const HeroSection: React.FC = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center space-x-2"
             >
-              <FaFacebook /> {/* Icon */}
-              <span>Facebook</span> {/* Text */}
+              <FaFacebook />
+              <span>Facebook</span>
             </a>
           </button>
 
+          {/* Instagram Button */}
           <button className={styles.buttonSecondary}>
             <a
               href="https://www.instagram.com/muhammadsalah9544/"
@@ -46,8 +45,8 @@ const HeroSection: React.FC = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center space-x-2"
             >
-              <FaInstagram /> {/* Icon */}
-              <span>Instagram</span> {/* Text */}
+              <FaInstagram />
+              <span>Instagram</span>
             </a>
           </button>
         </div>
