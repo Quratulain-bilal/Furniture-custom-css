@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../../../styles/About.module.css";
-import { FaTwitter, FaPhoneAlt } from 'react-icons/fa';
+import { FaTwitter } from 'react-icons/fa';
 const HeroSection: React.FC = () => {
   return (
     <section id="about" className={styles.section}>
