@@ -5,7 +5,7 @@ const Discount2 = () => {
   const products = [
     {
       id: 1,
-      category: "CATEGORY",
+      category: "Dining",
       title: "The Catalyzer",
       price: "$16.00",
       imageUrl:
@@ -13,21 +13,21 @@ const Discount2 = () => {
     },
     {
       id: 2,
-      category: "CATEGORY",
+      category: "Sofa set",
       title: "Shooting Stars",
       price: "$21.15",
       imageUrl: "/p1.png",
     },
     {
       id: 3,
-      category: "CATEGORY",
+      category: "SOFA",
       title: "Neptune",
       price: "$12.00",
       imageUrl: "/p2.png",
     },
     {
       id: 4,
-      category: "CATEGORY",
+      category: "BROEN SOFA",
       title: "The 400 Blows",
       price: "$18.40",
       imageUrl: "/p3.png",
@@ -37,8 +37,10 @@ const Discount2 = () => {
 
   return (
     <section className="text-gray-600 body-font">
+
+      
       <div className={styles.container}>
-        <h2 className={styles.heading}>Our Discounted Products</h2>
+       
 
         <div className={styles.gridContainer}>
           {products.map((product) => (
