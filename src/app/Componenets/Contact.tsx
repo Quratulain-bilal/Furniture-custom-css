@@ -1,10 +1,12 @@
+
 import React from "react";
 import styles from "../../../styles/Contact.module.css";
 
 const ContactForm = () => {
   return (
     <div id="contacts">
-      <section id="contact"
+      <section
+        id="contact"
         className={`${styles.contactForm} text-gray-600 body-font relative`}
       >
         <div className="container px-5 py-24 mx-auto">
@@ -13,12 +15,12 @@ const ContactForm = () => {
               Contact Us
             </h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-             Feel free to contact us 
+              Feel free to contact us
             </p>
           </div>
           <div className="lg:w-1/2 md:w-2/3 mx-auto">
             <div className="flex flex-wrap -m-2">
-              <div className="p-2 w-1/2">
+              <div className="p-2 w-full sm:w-1/2">
                 <div className="relative">
                   <label
                     htmlFor="name"
@@ -34,7 +36,7 @@ const ContactForm = () => {
                   />
                 </div>
               </div>
-              <div className="p-2 w-1/2">
+              <div className="p-2 w-full sm:w-1/2">
                 <div className="relative">
                   <label
                     htmlFor="email"
@@ -54,25 +56,23 @@ const ContactForm = () => {
                 <div className="relative">
                   <label
                     htmlFor="message"
-                    className="leading-7 text-sm "
+                    className="leading-7 text-sm text-gray-600"
                   >
                     Message
                   </label>
                   <textarea
                     id="message"
                     name="message"
-                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300  focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 "
+                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-8 transition-colors duration-200 ease-in-out"
                   ></textarea>
                 </div>
               </div>
               <div className="p-2 w-full">
-                <button className="flex mx-auto text-white border-0 py-2 px-8 focus:outline-none  rounded text-lg">
+                <button className="flex mx-auto text-white bg-yellow-800 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-900 rounded text-lg">
                   Submit
                 </button>
               </div>
-              <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-            
-              </div>
+              <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center"></div>
             </div>
           </div>
         </div>
