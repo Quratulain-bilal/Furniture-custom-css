@@ -1,0 +1,58 @@
+/* Footer.module.css */
+
+.footer {
+  background-color: #f8f8f8;
+
+  color: #4b5563;
+}
+
+.footer a {
+  color: #1a202c;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #4b5563;
+}
+
+.footer .title-font {
+  font-size: 3.25rem;
+  font-weight: 900;
+}
+
+.footer .text-gray-600 {
+  color: #6b7280;
+}
+
+.footer svg {
+  transition: all 0.3s ease;
+}
+
+.footer svg:hover {
+  color: #2563eb;
+}
+
+.footer .text-xl {
+  font-size: 1.25rem;
+}
+
+.footer .text-sm {
+  font-size: 0.875rem;
+}
+
+.footer .text-gray-500 {
+  color: #6b7280;
+}
+
+.footer .inline-flex {
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer .ml-3 {
+  margin-left: 0.75rem;
+}
+
+.footer .ml-4 {
+  margin-left: 1rem;
+}

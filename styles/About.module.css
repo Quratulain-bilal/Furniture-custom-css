@@ -1,0 +1,63 @@
+
+.section {
+  background-color: #c49e51; 
+  font-family: serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.textContainer {
+  text-align: center;
+}
+
+.title {
+  color: #1f2937; /* Dark gray */
+  font-size: 4rem;
+  padding: 10%;
+  line-height: 50px;
+  font-weight: bolder;
+  
+}
+
+.description {
+  color:black; /* Medium gray */
+  line-height: 1.6;
+  margin-bottom: 24px;
+  font-weight: semibold;
+  display:flex;
+  justify-content: center;
+
+}
+
+/* About.module.css */
+
+.buttonPrimary {
+  background-color: #1da1f2; /* Twitter Blue */
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.buttonPrimary:hover {
+  background-color: #1a91da; /* Darker Blue on Hover */
+}
+
+.buttonSecondary {
+  background-color: #34b7f1; /* Contact Us Button */
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  margin-top: 16px;
+  transition: background-color 0.3s ease;
+  
+
+.buttonSecondary:hover {
+  background-color: #2a9bd3; /* Darker Blue on Hover */
+}
+}

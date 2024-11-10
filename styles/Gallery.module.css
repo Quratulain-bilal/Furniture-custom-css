@@ -1,0 +1,100 @@
+
+/* Gallery heading */
+.heading {
+  font-family: 'Georgia', serif; 
+  font-weight: bold; 
+  font-size: 3rem; 
+  color:black; 
+  animation: fadeIn 2s ease-out; 
+  margin-bottom: 2rem; 
+  text-align: center; 
+}
+
+/* Animation for the heading */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Gallery Grid */
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+  gap: 1.5rem; 
+  justify-items: center; 
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+
+.imageContainer {
+  width: 100%;
+  overflow: hidden; 
+  border-radius: 8px; 
+  position: relative; 
+  height: 100%; 
+}
+
+/* Image styling */
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px; /* Rounded corners for image */
+}
+
+/* Different image sizes for a dynamic and aesthetic look */
+.imageContainer:nth-child(1) {
+  grid-column: span 2; 
+  grid-row: span 2; 
+}
+
+.imageContainer:nth-child(2) {
+  grid-column: span 1; 
+}
+
+.imageContainer:nth-child(3) {
+  grid-column: span 1; 
+}
+
+.imageContainer:nth-child(4) {
+  grid-column: span 1; 
+}
+
+.imageContainer:nth-child(5) {
+  grid-column: span 1; 
+}
+
+.imageContainer:nth-child(6) {
+  grid-column: span 2; 
+  grid-row: span 2; 
+}
+
+/* Responsive Styles */
+
+/* Large screens: Grid with more space between images */
+@media (min-width: 1024px) {
+  .galleryGrid {
+    grid-template-columns: repeat(4, 1fr); 
+  }
+}
+
+/* Medium screens: Adjust grid layout */
+@media (max-width: 1023px) and (min-width: 768px) {
+  .galleryGrid {
+    grid-template-columns: repeat(3, 1fr); 
+  }
+}
+
+/* Small screens: Stack items vertically */
+@media (max-width: 767px) {
+  .galleryGrid {
+    grid-template-columns: 1fr; 
+  }
+}

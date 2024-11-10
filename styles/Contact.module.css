@@ -1,0 +1,54 @@
+/* ContactForm.module.css */
+.contactForm {
+  background-image: url('https://img.freepik.com/free-photo/mid-century-modern-living-room-interior-design-with-monstera-tree_53876-129803.jpg?ga=GA1.1.682219552.1730314102&semt=ais_hybrid');
+  background-size: cover;
+  background-position: center;
+  padding: 3rem;
+  border-radius: 8px;
+font-family: serif;
+}
+
+.contactForm h1 {
+  color: #1a202c;
+  font-size: 4rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.contactForm p {
+  font-size: 22px;
+  color: #4a5568;
+  text-align: center;
+}
+
+.contactForm .form-input {
+  border: 2px solid #edf2f7;
+  background-color: #edf2f7;
+  padding: 0.8rem;
+  border-radius: 4px;
+}
+
+.contactForm button {
+  background-color: #79671f;
+  color: white;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contactForm button:hover {
+  background-color: #010310;
+}
+
+.contactForm .social-icons svg {
+  margin: 0 10px;
+  width: 20px;
+  height: 20px;
+  fill: #4a5568;
+  cursor: pointer;
+}
+
+.contactForm .social-icons svg:hover {
+  fill: #1a202c;
+}

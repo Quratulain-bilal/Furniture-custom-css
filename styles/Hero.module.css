@@ -1,0 +1,69 @@
+/* HeroSection.module.css */
+.section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  color:white;
+  overflow: hidden;
+  font-family: serif;
+}
+
+.backgroundImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Makes the image cover the entire section */
+  z-index: -1; /* Sends the image behind other content */
+}
+
+.content {
+  position: relative;
+  text-align: center;
+  z-index: 1; /* Keeps content above the background image */
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+.buttonPrimary,
+.buttonSecondary {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buttonPrimary {
+  background-color: #0a5e48;
+  color: #ffffff;
+  margin-right: 10px;
+  
+}
+
+.buttonPrimary:hover {
+  background-color:green;
+}
+
+.buttonSecondary {
+  background-color: #e2e8f0;
+  color: #333333;
+}
+
+.buttonSecondary:hover {
+  background-color: #cbd5e1;
+}
