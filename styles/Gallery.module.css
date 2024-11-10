@@ -1,16 +1,14 @@
-
 /* Gallery heading */
 .heading {
-  font-family: 'Georgia', serif; 
-  font-weight: bold; 
-  font-size: 3rem; 
-  color:black; 
-  animation: fadeIn 2s ease-out; 
-  margin-bottom: 2rem; 
-  text-align: center; 
+  font-family: 'Georgia', serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: black;
+  animation: fadeIn 2s ease-out;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
-/* Animation for the heading */
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -25,20 +23,20 @@
 /* Gallery Grid */
 .galleryGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
-  gap: 1.5rem; 
-  justify-items: center; 
+  gap: 1rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Flexible columns */
+  justify-items: center;
 }
 
-
+/* Image Container */
 .imageContainer {
-  width: 100%;
-  overflow: hidden; 
-  border-radius: 8px; 
-  position: relative; 
-  height: 100%; 
+  overflow: hidden;
+  border-radius: 8px;
+  position: relative;
+  height: 100%;
+  transition: transform 0.3s ease;
 }
 
 /* Image styling */
@@ -46,55 +44,64 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
-  border-radius: 8px; /* Rounded corners for image */
+  border-radius: 8px;
+  transition: transform 0.3s ease;
 }
 
-/* Different image sizes for a dynamic and aesthetic look */
-.imageContainer:nth-child(1) {
-  grid-column: span 2; 
-  grid-row: span 2; 
+.imageContainer:hover .image {
+  transform: scale(1.05); /* Add subtle zoom on hover */
 }
 
-.imageContainer:nth-child(2) {
-  grid-column: span 1; 
-}
-
-.imageContainer:nth-child(3) {
-  grid-column: span 1; 
-}
-
-.imageContainer:nth-child(4) {
-  grid-column: span 1; 
-}
-
-.imageContainer:nth-child(5) {
-  grid-column: span 1; 
-}
-
-.imageContainer:nth-child(6) {
-  grid-column: span 2; 
-  grid-row: span 2; 
+/* Span larger images */
+.spanLarge {
+  grid-column: span 2;
+  grid-row: span 2;
 }
 
 /* Responsive Styles */
 
 /* Large screens: Grid with more space between images */
 @media (min-width: 1024px) {
+  .heading {
+    font-size: 3rem;
+  }
   .galleryGrid {
-    grid-template-columns: repeat(4, 1fr); 
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
   }
 }
 
 /* Medium screens: Adjust grid layout */
 @media (max-width: 1023px) and (min-width: 768px) {
+  .heading {
+    font-size: 2.5rem; /* Adjust heading size */
+  }
   .galleryGrid {
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
   }
 }
 
 /* Small screens: Stack items vertically */
 @media (max-width: 767px) {
+  .heading {
+    font-size: 2rem; /* Smaller font size on smaller screens */
+  }
   .galleryGrid {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr; /* 1 column for small screens */
+  }
+}
+
+/* Extra small screens (phones with width under 375px) */
+@media (max-width: 374px) {
+  .galleryGrid {
+    grid-template-coloumn: 1fr; 
+    gap: 0.5rem; 
+  }
+
+  .heading {
+    font-size: 1.8rem; /* Reduce font size for extra small screens */
+  }
+
+  .image {
+    height: auto; /* Let image height adjust based on the container width */
   }
 }
