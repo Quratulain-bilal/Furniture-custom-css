@@ -1,4 +1,3 @@
-
 .section {
   background-color: #c49e51; 
   font-family: serif;
@@ -17,7 +16,7 @@
 
 .title {
   color: #1f2937; /* Dark gray */
-  font-size: 4rem;
+  font-size: 2.5rem;
   padding: 10%;
   line-height: 50px;
   font-weight: bolder;
