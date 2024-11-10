@@ -1,5 +1,3 @@
-// ProductGrid.tsx
-
 import React from "react";
 import styles from "../../../styles/Product.module.css";
 
@@ -7,57 +5,56 @@ const ProductGrid = () => {
   const products = [
     {
       id: 1,
-      category: "CATEGORY",
+      category: "Chair",
       title: "The couchh",
       price: "$26.00",
-      imageUrl:
-        "p12.png",
+      imageUrl: "p12.png",
     },
     {
       id: 2,
-      category: "CATEGORY",
+      category: "Round sofa",
       title: "Comfort Stars",
       price: "$21.15",
       imageUrl: "/p11.png",
     },
     {
       id: 3,
-      category: "CATEGORY",
+      category: "Table",
       title: "Galaxy",
       price: "$12.00",
       imageUrl: "/p10.png",
     },
     {
       id: 4,
-      category: "CATEGORY",
-      title: "The  Blows",
+      category: "Sofa",
+      title: "The Blows",
       price: "$18.40",
       imageUrl: "/p9.png",
     },
     {
       id: 5,
-      category: "CATEGORY",
+      category: "Chair",
       title: "The yellow chair",
       price: "$16.00",
       imageUrl: "/p8.png",
     },
     {
       id: 6,
-      category: "CATEGORY",
+      category: "Chair",
       title: "Shiny Chair",
       price: "$21.15",
       imageUrl: "/p7.png",
     },
     {
       id: 7,
-      category: "CATEGORY",
+      category: "Chair",
       title: "White Glaxy",
       price: "$42.00",
       imageUrl: "/p6.png",
     },
     {
       id: 8,
-      category: "CATEGORY",
+      category: "Chair",
       title: "The white chair",
       price: "$18.40",
       imageUrl: "/p5.png",
@@ -67,11 +64,7 @@ const ProductGrid = () => {
   return (
     <section id="products" className="text-gray-600 body-font">
       <div className={styles.container}>
-
-    
         <h2 className={styles.heading}>Our Products</h2>
-
-
 
         <div className={styles.gridContainer}>
           {products.map((product) => (
